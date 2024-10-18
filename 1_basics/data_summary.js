@@ -6,9 +6,8 @@
     let anotherName = myCarName 
     anotherName = "BMW"
 
-    console.log(myCarName);
-    console.log(anotherName);
-
+    // console.log(myCarName);
+    // console.log(anotherName);
 
     let firstUser = {
         email : "user@something.com",
