@@ -54,4 +54,4 @@ function returnvalues(getArray){
     return getArray[1]
 }
 console.log(returnvalues(newArry));
-
+   
