@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM | two learning</title>
+</head>
+<body style="background-color:#232323;  color:#ffff;">
+    <div class="weekday">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wendseday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const wday = document.querySelector('.weekday')
+     /*console.log(wday);
+   console.log(wday.children);
+    console.log(wday.children[0]); */
+
+    //for (let i = 0; i < wday.children.length; i++){
+      //  console.log(wday.children[i].innerHTML);
+    //}
+    wday.children[1].style.color = 'gold'
+   // console.log(wday.firstElementChild)
+    //console.log(wday.lastElementChild)
+
+    const dayOne = document.querySelector('.day')
+    //console.log(dayOne)
+    //console.log(dayOne.parentElement)
+    //console.log(dayOne.nextElementSibling)
+
+    console.log("Nodes: ",wday.childNodes)
+</script>
+</html>
