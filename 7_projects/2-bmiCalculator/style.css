@@ -1,0 +1,65 @@
+.container {
+    width: 575px;
+    height: 476px;
+    text-align:center;
+    background-color: #797978;
+    padding: 30px;
+    margin:auto
+  }
+  #height,
+  #weight {
+    width: 150px;
+    height: 25px;
+    margin-top: 30px;
+    font-size:18px;
+
+  }
+  #weight-guide {
+    padding-top:25px;
+    margin:auto;
+  }
+  
+  #results {
+    font-size: 25px;
+    margin-left: 90px;
+    margin-top: 20px;
+    color: rgb(241, 241, 241);
+  }
+  
+  button {
+    /* width: 150px;
+    height: 35px;
+    margin-left: 90px;
+    margin-top: 25px;
+    background-color: #fff;
+    color: #212121;
+    text-align:center;*/
+    text-decoration: none;
+    border: 2px solid #212121;
+    margin-top:30px;
+    font-size: 25px; 
+    padding: 3px 20px;
+    border-radius: 8px;
+    /* margin:auto; */
+
+
+  }
+  
+  h1 {
+    padding-left: 15px;
+    padding-top: 25px;
+    margin:auto
+    
+  }
+  
+label{
+    font-size:20px;
+}
+#bmiGuids {
+    font-size: 25px;
+    margin-left: 90px;
+    margin-top: 20px;
+    color: rgb(241, 241, 241);
+    text-align:center;
+  }
+  
