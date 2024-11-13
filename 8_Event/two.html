@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>sync/async projecct </title>
+</head>
+<body>
+    <h1>set Timeout Project </h1>
+    <button type="button" id="stop">STOP</button>
+</body>
+<script>
+
+const sayjs = function ( ){
+    console.log("Javascript2");
+}
+const changehead = function (){
+    document.querySelector('h1').innerHTML= "Best Timeout project with function and with oter method"
+}
+
+
+//setTimeout(sayjs , 2000)
+
+const stopfun = setTimeout(changehead, 2000)
+
+document.querySelector('#stop').addEventListener('click', function (){
+    clearTimeout(stopfun)
+    console.log("stoped")
+})
+
+
+    
+</script>
+</html>

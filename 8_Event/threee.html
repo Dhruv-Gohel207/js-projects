@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button{
+            padding:5px 10px;
+            font-size: large;
+            margin: 5px;
+        }
+    </style>
+
+    <title>Time projects</title>
+</head>
+<body style="background-color: rgb(6, 3, 25); color:aliceblue">
+    <h1>Javascript time program</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+     let intId;
+    const saytime = function (){
+        console.log("Javascript", Date.now())
+    }
+    function startInterval() {
+        intId = setInterval(saytime, 1000);
+    }
+    startInterval();
+
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(intId);
+        console.log("Stopped");
+    });
+
+    document.querySelector('#start').addEventListener('click', function () {
+        clearInterval(intId); // Clear any previous interval to avoid multiple intervals
+        startInterval();           // Start a new interval
+        console.log("Started");
+    });
+
+ 
+</script>
+</html>
