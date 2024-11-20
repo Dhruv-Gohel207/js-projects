@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Closure in JS</title>
+    <style>
+        div{
+            margin-left:10px;
+            padding: 10px;
+            text-align: center;
+        }
+        button{
+            margin-left:10px;
+            padding: 10px 12px;
+        }
+        
+    </style>
+</head>
+<body style="background-color: black; color:aliceblue">
+    <div>
+        <button type="button" id="gold">Gold</button>
+        <button type="button" id="green">Green</button>
+    </div>
+</body>
+<script>
+
+            // CLOSURE--Lexical scoping
+    /*
+    function init() {
+        var name = "Mozilla"; 
+            function displayName() {
+                    console.log(name); 
+                }
+                displayName();
+            }
+            init(); */
+
+        /*function outer(){
+            let username = "morin"
+            //console.log(secert)
+
+            function inner(){
+                let secert = "132ice"
+                console.log("inner", username)
+            }
+            function innertwo(){
+                console.log("inner2", username)
+                console.log(secert)
+            }
+            inner();
+            innertwo();
+        }
+        outer();*/
+
+
+                //<--------CLOSURE-------->//
+
+      /*  function makeFunc() {
+            const name = "Mozilla";
+                function displayName() {
+                    console.log(name);
+            }
+            return displayName;
+          }
+          
+          const myFunc = makeFunc();
+          myFunc();*/
+          
+
+
+</script>
+
+<script>
+         // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`
+        // }
+        // document.getElementById("green").onclick = function(){
+        //     document.body.style.backgroundColor = `green`
+        // }
+
+        function clickHandler(color){
+            //document.body.style.backgroundColor = `${color}`
+
+            return function (){
+            document.body.style.backgroundColor = `${color}`
+
+            }
+        }
+        document.getElementById('gold').onclick = clickHandler('gold')
+        document.getElementById('green').onclick = clickHandler('green')
+</script>
+</html>
